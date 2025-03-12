@@ -6,6 +6,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -80,7 +81,7 @@ p {
 }
 .hero-text {
   padding-top: 100px;
-  width: 600px;
+  max-width: 600px;
 }
 .hero-1 {
   margin-top: 100px;
@@ -95,11 +96,17 @@ p {
 }
 .hero-text-p {
   font-size: 1.8rem;
-  width: 80%;
+  max-width: 80%;
   margin-top: 25px;
   margin-bottom: 25px;
   line-height: 2.5rem;
   letter-spacing: 0.5px;
+}
+.hero-image{
+  max-width: 600px !important;
+}
+.btns-div{
+  display: flex !important;
 }
 .hero-btn {
   padding: 10px 20px;
@@ -108,8 +115,8 @@ p {
   color: #fff;
   cursor: pointer;
   border-radius: 5px;
-  box-shadow: 0 0 10px 0;
-  align-self: flex-start;
+  box-shadow: 0 0 5px 0;
+  /* align-self: flex-start; */
   transition: all 0.05s linear;
 }
 .hero-btn:hover {
@@ -259,6 +266,7 @@ p {
   display: flex;
   justify-content: space-evenly !important;
   align-items: center;
+  margin-bottom: 50px;
 }
 .how-text {
   display: flex;
@@ -274,7 +282,7 @@ p {
   color: #007bff;
 }
 .how-text p {
-  width: 75%;
+  max-width: 75%;
   margin-top: 25px;
   margin-bottom: 25px;
   font-size: 1.8rem;
@@ -296,6 +304,10 @@ p {
 .testimonails-section {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1006%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(230%2c 240%2c 255%2c 1)'%3e%3c/rect%3e%3cpath d='M1440 0L838.98 0L1440 206.59z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M838.98 0L1440 206.59L1440 361.47L733.65 0z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M733.65 0L1440 361.47L1440 367.79L659.74 0z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M659.74 0L1440 367.79L1440 428.98L274.28000000000003 0z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M0 560L44.53 560L0 383.26z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M0 383.26L44.53 560L600.99 560L0 227.04z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M0 227.03999999999996L600.99 560L690.55 560L0 106.30999999999996z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M0 106.30999999999995L690.55 560L1152.24 560L0 46.07999999999995z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1006'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
   background-size: cover;
+  display: flex;
+  flex-wrap: wrap !important;
+  align-items: center;
+  justify-content: center;
 }
 
 .testimonials-section::before {
@@ -311,13 +323,15 @@ p {
 .testimonials-div {
   padding: 100px 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   position: relative;
   z-index: 3;
+  flex-wrap: wrap !important;
+  gap: 50px;
 }
 .testimonails-section h1 {
   color: #007bff;
-  text-align: center;
+  text-align: center !important;
   font-size: 3rem;
   padding-top: 80px;
 }
@@ -352,9 +366,6 @@ p {
   transform: translateY(-8px) scale(1.05) !important;
   /* transform: scale(1.05); */
 }
-.test-text {
-  z-index: 3;
-}
 .test-text h3 {
   font-size: 2rem;
   margin-bottom: 30px;
@@ -375,7 +386,7 @@ p {
 /*  */
 
 .pricing-section {
-  padding: 40px 20px;
+  padding: 100px 20px;
   background: white;
   text-align: center;
 }
@@ -383,6 +394,7 @@ p {
 .pricing-section h2 {
   color: #007bff;
   margin-bottom: 20px;
+  font-size: 3rem;
 }
 
 .pricing-toggle {
@@ -480,8 +492,15 @@ input:checked + .slider:before {
 }
 
 .pricing-card h3 {
+  font-size: 2rem;
   margin: 10px 0;
   color: #333;
+}
+.pricing-card ul{
+  font-size: 1.4rem;
+}
+.cta-button-primary{
+  font-size: 1.4rem;
 }
 
 .price {
@@ -579,6 +598,7 @@ input:checked + .slider:before {
 }
 
 .footer-legal {
+  color: #f7f7f7;
   margin: 0;
   padding-top: 10px;
   border-top: 1px solid #444;
