@@ -6,7 +6,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -102,10 +102,10 @@ p {
   line-height: 2.5rem;
   letter-spacing: 0.5px;
 }
-.hero-image{
+.hero-image {
   max-width: 600px !important;
 }
-.btns-div{
+.btns-div {
   display: flex !important;
 }
 .hero-btn {
@@ -116,7 +116,7 @@ p {
   cursor: pointer;
   border-radius: 5px;
   box-shadow: 0 0 5px 0;
-  /* align-self: flex-start; */
+  align-self: flex-start;
   transition: all 0.05s linear;
 }
 .hero-btn:hover {
@@ -262,11 +262,16 @@ p {
   padding-top: 100px;
   /* margin-top: 100px; */
 }
+.how-child:not(.how-child:last-of-type) {
+  margin-bottom: 50px;
+}
+.how-child:last-child{
+  padding-bottom: 50px;
+}
 .how-child {
   display: flex;
   justify-content: space-evenly !important;
   align-items: center;
-  margin-bottom: 50px;
 }
 .how-text {
   display: flex;
@@ -496,10 +501,10 @@ input:checked + .slider:before {
   margin: 10px 0;
   color: #333;
 }
-.pricing-card ul{
+.pricing-card ul {
   font-size: 1.4rem;
 }
-.cta-button-primary{
+.cta-button-primary {
   font-size: 1.4rem;
 }
 
@@ -630,7 +635,6 @@ input:checked + .slider:before {
     margin-top: 10px;
   }
 }
-
 
 @keyframes move-pattern {
   /* Added line */
