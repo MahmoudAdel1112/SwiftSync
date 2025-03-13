@@ -5,6 +5,6 @@ SwyftSync is an AI-powered tool I built to save time by automating workflows and
 # Project Technologies
 ### SwyftSync runs on a simple stack:
 
-HTML: Semantic tags for structure, like <section> and <form>.
-CSS: Flexbox, Grid, and some animation for a slick, responsive look.
-JavaScript: Vanilla JS with localStorage for data and a basic task-sorting algorithm.
+* HTML: Semantic tags for structure, like <section> and <form>.
+* CSS: Flexbox, Grid, and some animation for a slick, responsive look.
+* JavaScript: Vanilla JS with localStorage for data and a basic task-sorting algorithm.
