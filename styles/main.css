@@ -119,6 +119,9 @@ p {
   align-self: flex-start;
   transition: all 0.05s linear;
 }
+header .hero-btn{
+  align-self: stretch !important;
+}
 .hero-btn:hover {
   transform: scale(1.01);
   background-color: #fff;
